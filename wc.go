@@ -58,6 +58,11 @@ func main() {
 	}
 }
 
-func (wc swc) Len() int           { return len(wc) }
-func (wc swc) Less(i, j int) bool { return wc[i].count < wc[j].count }
-func (wc swc) Swap(i, j int)      { wc[i], wc[j] = wc[j], wc[i] }
+func (wc swc) Len() int { return len(wc) }
+func (wc swc) Less(i, j int) bool {
+	if wc[i] != wc[j] {
+		return wc[i].count > wc[j].count
+	}
+	return wc[i].word > wc[j].word
+}
+func (wc swc) Swap(i, j int) { wc[i], wc[j] = wc[j], wc[i] }
