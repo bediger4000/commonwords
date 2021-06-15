@@ -85,7 +85,7 @@ than it is to get a shell script.
 Knowing how to do the kind of text processing that McIlroy's
 script illustrates is a valuable skill when dealing with more than
 a page or two of information,
-but our modern sensitivities are distorted by Microsoft's vision of
+but our modern sensibilities are distorted by Microsoft's vision of
 what constitutes a good amount of information to process,
 which is bout a page in Word and Excel.
 
