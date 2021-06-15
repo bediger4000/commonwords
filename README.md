@@ -4,6 +4,7 @@
 Read a file of text,
 determine the n most frequently used words,
 and print out a sorted list of those words along with their frequencies.
+
 ---
 
 I found this problem statement on [this blog](https://franklinchen.com/blog/2011/12/08/revisiting-knuth-and-mcilroys-word-count-programs/)
@@ -12,8 +13,8 @@ I thought I'd do it in Go to see how hard it is.
 
 ## Results
 
-* [McIlroy's shell script] version
-* [My Go] version, 68 lines, some blank, some boilerplate
+* [McIlroy's shell script](mcilroy) version
+* [My Go](wc.go) version, 68 lines, some blank, some boilerplate
 
 Test inputs:
 
@@ -39,6 +40,10 @@ The git logs show amost exactly 3 hours between first and last
 check in of [wc.go](wc.go).
 I did eat a meal in there,
 and have a longish discussion with a family member.
+
+This compares very favorably with the 9.5 hours spent
+implementing a [C language](https://www.cs.upc.edu/~eipec/pdf/p583-van_wyk.pdf)
+version published contemporaneously with Knuth's solution.
 
 The real problem is deciding what's the correct output
 for something like this very `README.md` file.
@@ -69,3 +74,18 @@ This small difference illustrates a major problem in software engineering.
 What's obvious to the requirements writer may not be obvious to the programmer.
 Programming entails attention to "minor" details like that,
 and "correct" vs "incorrect" programs hinge on those minor details.
+
+I'm going to both agree and disagree with the blogger, Franklin Chen.
+I'm skeptical of literate programming, too,
+but I don't think that "general purpose" programming languages
+are a universal replacement for shell scripts.
+It's far harder to get a C, Go or Haskell program correct
+for some weird variant on word frequency,
+than it is to get a shell script.
+Knowing how to do the kind of text processing that McIlroy's
+script illustrates is a valuable skill when dealing with more than
+a page or two of information,
+but our modern sensitivities are distorted by Microsoft's vision of
+what constitutes a good amount of information to process,
+which is bout a page in Word and Excel.
+
