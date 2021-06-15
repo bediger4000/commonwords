@@ -41,7 +41,7 @@ func main() {
 		line := scanner.Text()
 		words := strings.Fields(line)
 		for _, word := range words {
-			wordcount[word]++
+			wordcount[strings.ToLower(word)]++
 		}
 	}
 
@@ -54,15 +54,15 @@ func main() {
 	sort.Sort(freq)
 
 	for i := 0; i < n; i++ {
-		fmt.Printf("%s\t%d\n", freq[i].word, freq[i].count)
+		fmt.Printf("%7d\t%s\n", freq[i].count, freq[i].word)
 	}
 }
 
 func (wc swc) Len() int { return len(wc) }
 func (wc swc) Less(i, j int) bool {
-	if wc[i] != wc[j] {
+	if wc[i].count != wc[j].count {
 		return wc[i].count > wc[j].count
 	}
-	return wc[i].word > wc[j].word
+	return wc[i].word < wc[j].word
 }
 func (wc swc) Swap(i, j int) { wc[i], wc[j] = wc[j], wc[i] }
