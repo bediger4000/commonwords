@@ -76,16 +76,16 @@ Programming entails attention to "minor" details like that,
 and "correct" vs "incorrect" programs hinge on those minor details.
 
 I'm going to both agree and disagree with the blogger, Franklin Chen.
-I'm skeptical of literate programming, too,
-but I don't think that "general purpose" programming languages
+I'm skeptical of literate programming for the same reasons he is.
+But I don't think that "general purpose" programming languages
 are a universal replacement for shell scripts.
 It's far harder to get a C, Go or Haskell program correct
 for some weird variant on word frequency,
-than it is to get a shell script.
+than it is to get a shell script correct.
 Knowing how to do the kind of text processing that McIlroy's
 script illustrates is a valuable skill when dealing with more than
-a page or two of information,
-but our modern sensibilities are distorted by Microsoft's vision of
-what constitutes a good amount of information to process,
-which is bout a page in Word and Excel.
-
+a page or two of information.
+Modern sensibilities are distorted by Microsoft's vision of
+what constitutes a good amount of information to process.
+Word and Excel have lowered this "good amount" to about a page.
+Simple, one-off text processing shell scripts have a lot of value.
