@@ -9,6 +9,8 @@ and print out a sorted list of those words along with their frequencies.
 
 I found this problem statement on [this blog](https://franklinchen.com/blog/2011/12/08/revisiting-knuth-and-mcilroys-word-count-programs/)
 
+PDF of original magazine exchange [here](https://www.cs.tufts.edu/~nr/cs257/archive/don-knuth/pearls-2.pdf)
+
 I thought I'd do it in Go to see how hard it is.
 
 ## Results
