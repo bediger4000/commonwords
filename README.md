@@ -13,6 +13,11 @@ PDF of original magazine exchange [here](https://www.cs.tufts.edu/~nr/cs257/arch
 
 I thought I'd do it in Go to see how hard it is.
 
+I found a guy who uses this problem as a
+[job interview question](https://benhoyt.com/writings/count-words/).
+He offers quite a bit of what I call "interview analysis".
+He's got a Go version to compare this code to.
+
 ## Results
 
 * [McIlroy's shell script](mcilroy) version
