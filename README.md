@@ -17,6 +17,8 @@ I found a guy who uses this problem as a
 [job interview question](https://benhoyt.com/writings/count-words/).
 He offers quite a bit of what I call "interview analysis".
 He's got a Go version to compare this code to.
+Later, he wrote a [performance analysis](https://benhoyt.com/writings/io-is-no-longer-the-bottleneck/)
+of it.
 
 ## Results
 
